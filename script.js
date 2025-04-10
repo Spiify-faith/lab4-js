@@ -26,13 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
-  
-  //FAQ toggle
-document.querySelectorAll(".question").forEach((q)=> {
-    q.addEventListener("click", () => {
-    q.nextElementSibling.classList.toggle("visible");
-    });
-});
 
     //load users button
 document.getElementById("loadUsersBtn").addEventListener("click",
@@ -59,8 +52,6 @@ document.getElementById("themeToggle").addEventListener("click", () =>
     document.body.classList.toggle("dark-theme");
     });
     
-
-
 // Back to Top Button
 const backToTopBtn = document.getElementById("backToTop");
 window.addEventListener("scroll", () => {
@@ -80,8 +71,6 @@ function updateClock() {
   }
   setInterval(updateClock, 1000);
   updateClock();
-  
- 
 
 let current = 0; //  Start from first image
 
