@@ -1,0 +1,176 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.dark-theme {
+    background-color: #121212;
+    color: #ee4d8b;
+    }
+    
+/* Navigation Bar (Flexbox) */
+nav ul {
+    display: flex;
+    list-style: none;
+    background: #333;
+    padding: 10px;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 40px;
+    background: url('images/parfum.jpg') no-repeat center center/cover;
+   
+    
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Flexbox Layout */
+.flexbox-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.flex-item {
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    transition: transform 0.3s;
+}
+
+.flex-item:hover {
+    transform: scale(1.05);
+    background: #ddd;
+}
+
+/* Contacts*/
+form {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+button {
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background: hsl(346, 71%, 74%);
+}
+
+/* Animation using @keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hero {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .flexbox-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        font-size: 1.2em;
+    }
+}
+
+/*services*/
+
+.services-grid {
+    text-align: center;
+    padding: 20px;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.service-card {
+    background:  hsl(347, 100%, 94%);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-card {
+        padding: 15px;
+    }
+}
+
+.answer {
+    display: ;
+    }
+    .answer.visible {
+    display: block;
+    }
